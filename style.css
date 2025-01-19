@@ -9,16 +9,56 @@ body{
 }
 
 header{
-    height: 25vh;
+    display: flex;
+    padding-right: 1rem;
     background-color: lime;
 }
 
 #title{
-    height: 80%;
+    display: inline;
+    margin: 1rem 3rem;
+    text-align: left;
+    font-size: 100px;
+    font-family: "Cookie", Times, serif;
+    font-weight: bolder;
+    color:red;
+    flex: 1 1 auto;
+}
+
+#inner-title{
+    color: black;
 }
 
 nav{
-    height: 20%;
+    align-self: flex-end;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: white;
 }
 
 main{
