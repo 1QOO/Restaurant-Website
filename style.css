@@ -10,13 +10,14 @@ body{
 
 header{
     display: flex;
-    padding-right: 1rem;
+    flex-flow: wrap row;
+    gap: 1rem;
+    padding: 1rem 3rem 0rem;
     background-color: lime;
 }
 
 #title{
     display: inline;
-    margin: 1rem 3rem;
     text-align: left;
     font-size: 100px;
     font-family: "Cookie", Times, serif;
@@ -35,11 +36,11 @@ nav{
 
 .nav-list{
     list-style-type: none;
+    display: flex;
 }
 
-nav ul li{
-    display: inline-block;
-    width: 100px;
+.nav-list li{
+    flex: 1 1 100px;
     text-align: center;
 }
 
